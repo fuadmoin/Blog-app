@@ -131,7 +131,7 @@ rspec spec
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing <a name="contributing"></a>
+## 🤝 Contributing <a  name="contributing"></a>
 
 Contributions, [issues](https://github.com/fuadmoin/Blog-app/issues), and feature requests are welcome!
 
