@@ -5,7 +5,7 @@
   <img src="./img/logo2.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Title</b></h3>
+  <h3><b>Blog app</b></h3>
 
 </div>
 
@@ -30,26 +30,34 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Math magicians <a name="about-project"></a>
+# 📖 Blog app <a name="about-project"></a>
 
-**Math magicians** is a single page app that uses api for a basic calculator.
+**Blog app** is a simple project that shows the list of posts and empower readers to interact with them by adding comments and likeing posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- **HTML, CSS, React, and JavaScript**
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://rubyonrails.org/">Rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
 
 ### Key Features <a name="key-features"></a>
 
-- **html styled with css and javascript**
-- **uses react**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"> </a>
-
-> Check out the live demo for this project [here.](https://fuadmoin.github.io/TODOLIST/dist/)
+- **rails with postgresql database**
+- **migrations to create the tables in the database**
+- **migrations to add foreign key and to create indexes to the tables**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -67,6 +75,8 @@ Code editor (VSCode,Atom etc...)
 A browser (Chrome,Mozilla,Safari etc...)
 Version Control System (Git and Github)
 NodeJS (https://nodejs.org/en/)
+PostgreSQL (https://www.postgresql.org/)
+Ruby (https://www.ruby-lang.org/en/)
 ```
 
 ### Setup <a name="setup"></a>
@@ -75,7 +85,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git https://github.com/fuadmoin/Math-magicians.git
+  git https://github.com/fuadmoin/Blog-app.git
 ```
 
 ### Install <a name="install"></a>
@@ -83,14 +93,15 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-npm install
+bundle install
 ```
 
 ### Usage <a name="usage"></a>
 
 ```
   code .
-  npm start
+  rails db:setup
+  rails s
 ```
 
 ### Run tests <a name="run-tests"></a>
@@ -98,14 +109,9 @@ npm install
 To test, run the following command:
 
 ```sh
-npm test
+gem i rspec
+rspec spec
 ```
-
-### Deployment <a name="triangular_flag_on_post-deployment"></a>
-
-You can deploy this project using Github-Page.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Author <a name="authors"></a>
 
@@ -113,21 +119,21 @@ You can deploy this project using Github-Page.
 
 - GitHub: [@fuadmoin](https://github.com/fuadmoin)
 - Twitter: [@Fuad01804580](https://twitter.com/Fuad01804580)
-- LinkedIn: [Fuad Moin](https://www.linkedin.com/in/fuad-moin-a7b126259/)
+- LinkedIn: [Fuad Moin](https://www.linkedin.com/in/fuadmoin/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[HTML, CSS, and Javascript will be added]**
-- [ ] **[Api will be added]**
-- [ ] **[users will be able to use the calculator]**
+- [ ] **[Validations and Model specs will be added]**
+- [ ] **[Processing data in models will be added]**
+- [ ] **[Setup and controllers will be added]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing <a name="contributing"></a>
+## 🤝 Contributing <a  name="contributing"></a>
 
-Contributions, [issues](https://github.com/fuadmoin/Math-magicians/issues), and feature requests are welcome!
+Contributions, [issues](https://github.com/fuadmoin/Blog-app/issues), and feature requests are welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
