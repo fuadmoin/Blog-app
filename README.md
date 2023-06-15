@@ -57,6 +57,8 @@
 - **migrations to create the tables in the database**
 - **migrations to add foreign key and to create indexes to the tables**
 - **model class for all the tables in the database**
+- **model validations**
+- **unit specs for all the models**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,9 +126,9 @@ rspec spec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Validations and Model specs will be added]**
-- [ ] **[Processing data in models will be added]**
 - [ ] **[Setup and controllers will be added]**
+- [ ] **[Controllers spec will be added]**
+- [ ] **[views will be added]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
