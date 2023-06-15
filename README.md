@@ -15,14 +15,12 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -58,6 +56,7 @@
 - **rails with postgresql database**
 - **migrations to create the tables in the database**
 - **migrations to add foreign key and to create indexes to the tables**
+- **model class for all the tables in the database**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
