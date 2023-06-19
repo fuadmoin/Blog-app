@@ -59,6 +59,7 @@
 - **model class for all the tables in the database**
 - **model validations**
 - **unit specs for all the models**
+- **controllers for users and posts models**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
