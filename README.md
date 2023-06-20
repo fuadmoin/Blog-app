@@ -127,8 +127,8 @@ rspec spec
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Setup and controllers will be added]**
-- [ ] **[Controllers spec will be added]**
+- [ ] **[specs for all methods will be added]**
+- [ ] **[Forms will be added]**
 - [ ] **[views will be added]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -147,7 +147,7 @@ If you like this project please consider starring it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Microverse](https://www.microverse.org/).
+I would like to thank [Microverse](https://www.microverse.org/) for giving me this opportunity to work on this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
