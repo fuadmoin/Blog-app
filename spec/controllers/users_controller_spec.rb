@@ -1,26 +1,59 @@
 require 'rails_helper'
 
-RSpec.describe UsersController, type: :controller do
-  describe 'GET #index' do
+RSpec.describe 'Users', type: :request do
+  describe 'GET /users' do
     it 'assigns all users as @users' do
       user = User.create!(name: 'John Doe', posts_counter: 0)
-      get :index
+      get users_path
       expect(assigns(:users)).to eq([user])
+    end
+
+    it 'returns a successful response' do
+      get users_path
+      expect(response).to be_successful
+    end
+
+    it 'renders the index template' do
+      get users_path
+      expect(response).to render_template(:index)
+    end
+
+    it 'includes the correct placeholder text in the response body' do
+      get users_path
+      expect(response.body).to include('Here is a list of users')
     end
   end
 
-  describe 'GET #show' do
+  describe 'GET /users/:id' do
     context 'when the user exists' do
       it 'assigns the requested user as @user' do
         user = User.create!(name: 'John Doe', posts_counter: 0)
-        get :show, params: { id: user.to_param }
+        get user_path(user)
         expect(assigns(:user)).to eq(user)
+      end
+
+      it 'returns a successful response' do
+        user = User.create!(name: 'John Doe', posts_counter: 0)
+        get user_path(user)
+        expect(response).to be_successful
+      end
+
+      it 'renders the show template' do
+        user = User.create!(name: 'John Doe', posts_counter: 0)
+        get user_path(user)
+        expect(response).to render_template(:show)
+      end
+
+      it 'includes the correct placeholder text in the response body' do
+        user = User.create!(name: 'John Doe', posts_counter: 0)
+        get user_path(user)
+        expect(response.body).to include('users bio')
       end
     end
 
     context 'when the user does not exist' do
       it 'redirects to the users list' do
-        get :show, params: { id: -1 }
+        get user_path(-1)
         expect(response).to redirect_to(users_path)
       end
     end
