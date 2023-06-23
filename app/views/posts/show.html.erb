@@ -1,3 +1,14 @@
-<h1>post title</h1>
-<h2>post content</h2>
-<h3>post comments</h3>
+<div class="post-large">
+  <small class="author" ><%= "#{@post.title} by #{@user.name}" %></small>
+  <small class="comment-counter">Comments: <%= @post.comments_counter%></small>
+  <small>Likes: <%= @post.likes_counter%></small>
+    <p class="post-text"><%= @post.text%></p>
+</div>
+<div class="comments-container large">
+    <% @post.comments.each do |comment| %>
+    <div class="comments">
+        <small><%= comment.user.name%>: </small>
+        <small><%= comment.text%> </small>
+    </div>
+    <% end %>
+</div>

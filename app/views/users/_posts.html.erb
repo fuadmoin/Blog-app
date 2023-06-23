@@ -1,0 +1,10 @@
+<div class="posts">
+  <small class="post-title"><%= link_to post.title, user_post_path(@user, post) %></small>
+  <p class="post-text">
+    <%= truncate(post.text, length: 100, omission: '...' ) %>
+  </p>
+  <div class="comment-like">
+    <small>Comments: <%= post.comments_counter %></small>
+    <small class="likes">Likes: <%= post.likes_counter %></small>
+  </div>
+</div>
