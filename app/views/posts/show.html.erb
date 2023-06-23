@@ -6,9 +6,15 @@
 </div>
 <div class="comments-container large">
     <% @post.comments.each do |comment| %>
-    <div class="comments">
-        <small><%= comment.user.name%>: </small>
-        <small><%= comment.text%> </small>
-    </div>
+        <div class="comments">
+            <small><%= comment.user.name%>: </small>
+            <small><%= comment.text%> </small>
+        </div>
     <% end %>
 </div>
+
+<%= form_for([@user, @post, @post.comments.build]) do |f| %>
+    <%= f.label :text, class: "title-label" %><br>
+    <%= f.text_area :text, class: "title-input" %>
+    <%= f.submit "Create Comment", class: "submit" %>
+<% end %>
