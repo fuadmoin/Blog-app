@@ -1,0 +1,103 @@
+.container {
+  padding-left: 50px;
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.picture {
+  height: 6rem;
+  width: 6rem;
+  border: 2px solid black;
+}
+
+.inner {
+  margin-left: 50px;
+  padding: 1rem;
+  left: 30px;
+  border: 2px solid black;
+}
+
+.num-posts {
+  display: block;
+  font-size: small;
+  margin-left: 10rem;
+}
+
+.bio {
+  margin: 30px 0 30px 50px;
+  border: solid black 2px;
+  width: 27rem;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.bio p {
+  font-weight: normal;
+}
+
+.posts {
+  margin: 0 0 15px 50px;
+  border: solid black 2px;
+  width: 27rem;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.post-title {
+  font-size: 1.5rem;
+}
+
+.post-text {
+  font-weight: normal;
+}
+
+.comment-like {
+  margin-left: 16rem;
+}
+
+.likes {
+  margin-left: 1rem;
+}
+
+.see-posts {
+  margin-left: 15rem;
+  cursor: pointer;
+}
+
+.posts-container {
+  margin-top: 30px;
+}
+
+.comments-container {
+  margin: -15px 0 30px 50px;
+  border: solid black 2px;
+  width: 27rem;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.post-large {
+  margin: 15px 0 15px 50px;
+  border: solid black 2px;
+  width: 30rem;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.author {
+  font-size: 1.4rem;
+}
+
+.comment-counter {
+  margin-left: 11rem;
+  margin-right: 15px;
+}
+
+.large {
+  width: 30rem;
+}

@@ -1,4 +1,9 @@
-<h1><%= @user.name %></h1>
-<h2>users bio</h2>
-<h3>Here is a list of posts for <%= @user.name %> </h3>
+<%= render partial: "user", locals: {person: @user} %>
+<%posts = @user.recent_posts%>
+<div class="bio">Bio <br>  <p> <%= @user.bio%></p></div>
 
+<% posts.each do |post| %>
+  <%= render partial: "posts", locals: {post: post} %>
+<% end %>
+
+<button class="see-posts"> <%= link_to 'See all posts', user_posts_path(@user) %></button>
