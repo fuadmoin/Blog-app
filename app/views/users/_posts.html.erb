@@ -4,7 +4,7 @@
     <%= truncate(post.text, length: 100, omission: '...' ) %>
   </p>
   <div class="comment-like">
-    <small>Comments: <%= post.comments_counter %></small>
-    <small class="likes">Likes: <%= post.likes_counter %></small>
+    <small><%= link_to "Comments: #{post.comments_counter}", user_post_path(@user, post) %></small>
+    <small class="likes"><%= link_to "Likes: #{post.likes_counter}", like_user_post_path(@user, post), method: :post %></small>
   </div>
 </div>
