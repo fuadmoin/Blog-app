@@ -26,17 +26,6 @@ class PostsController < ApplicationController
     end
   end
 
-  def like
-    @post = Post.find(params[:id])
-    @like = @post.likes.build(user: current_user)
-
-    if @like.save
-      redirect_to user_post_path(@post.user, @post)
-    else
-      render :like
-    end
-  end
-
   private
 
   def post_params

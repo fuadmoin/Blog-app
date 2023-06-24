@@ -5,6 +5,6 @@
   </p>
   <div class="comment-like">
     <small><%= link_to "Comments: #{post.comments_counter}", user_post_path(@user, post) %></small>
-    <small class="likes"><%= link_to "Likes: #{post.likes_counter}", like_user_post_path(@user, post), method: :post %></small>
+    <small class="likes"><%= link_to "Likes: #{post.likes_counter}", user_post_likes_path(@user, post)%></small>
   </div>
 </div>

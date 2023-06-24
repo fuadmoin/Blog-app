@@ -1,7 +1,7 @@
 <div class="post-large">
   <small class="author" ><%= "#{@post.title} by #{@user.name}" %></small>
   <small class="comment-counter">Comments: <%= @post.comments_counter%></small>
-  <small><%= link_to "Likes: #{@post.likes_counter}", like_user_post_path(@user, @post) %>
+  <small><%= link_to "Likes: #{@post.likes_counter}", user_post_likes_path(@user, @post) %>
 </small>
     <p class="post-text"><%= @post.text%></p>
 </div>
