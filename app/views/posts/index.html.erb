@@ -1,11 +1,10 @@
 <%= render partial: "users/user", locals: {person: @user} %>
 
 <div class="posts-container">
-    <% @user.posts.each do |post| %>
+    <% @posts.each do |post| %>
         <%= render partial: "users/posts", locals: {post: post} %>
         <div class="comments-container">
-            <%  comments = post.recent_comments%>
-            <% comments.each do |comment| %>
+            <% post.recent_comments.each do |comment| %>
                 <div class="comments">
                     <small><%= comment.user.name%>: </small>
                     <small><%= comment.text%> </small>

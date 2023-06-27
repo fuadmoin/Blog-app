@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts
+    @recent_comments = Comment.where(post_id: @posts).includes(:user).select('DISTINCT ON (post_id) *').order(:post_id, created_at: :desc).limit(5) 
   end
 
   def show
