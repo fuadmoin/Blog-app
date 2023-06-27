@@ -14,6 +14,8 @@
     <% end %>
 </div>
 
+<%= paginate @posts %>
+
 <%= form_for([@user, @user.posts.build]) do |f| %>
     <%= f.label :title, class: "title-label" %><br>
     <%= f.text_field :title, class: "title-input" %>
