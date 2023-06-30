@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # posts_controller.rb
   def index
     @user = User.find(params[:user_id])
-    @posts = @user.posts.paginate(page: params[:page], per_page: 2)
+    @posts = @user.posts.page(params[:page]).per(2)
     @recent_comments = Comment.where(post_id: @posts)
       .includes(:user)
       .select('DISTINCT ON (post_id) *')
