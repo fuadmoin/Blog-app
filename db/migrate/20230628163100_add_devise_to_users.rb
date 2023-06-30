@@ -1,8 +1,8 @@
 class AddDeviseToUsers < ActiveRecord::Migration[7.0]
   def change
     ## Database authenticatable
-    add_column :users, :email, :string, null: false, default: ""
-    add_column :users, :encrypted_password, :string, null: false, default: ""
+    add_column :users, :email, :string, null: false, default: ''
+    add_column :users, :encrypted_password, :string, null: false, default: ''
 
     ## Recoverable
     add_column :users, :reset_password_token, :string
@@ -18,7 +18,7 @@ class AddDeviseToUsers < ActiveRecord::Migration[7.0]
     add_column :users, :unconfirmed_email, :string
 
     # Set a default value for email column
-    User.where(email: "").find_each do |user|
+    User.where(email: '').find_each do |user|
       user.update(email: "user-#{user.id}@example.com")
     end
 

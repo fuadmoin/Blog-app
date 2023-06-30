@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!, only: [:index, :show]
+  before_action :authenticate_user!, only: %i[index show]
 
   def index
     @users = User.all
@@ -13,5 +13,3 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 end
-
-

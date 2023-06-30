@@ -128,8 +128,8 @@ rspec spec
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[specs for all methods will be added]**
-- [ ] **[Forms will be added]**
-- [ ] **[views will be added]**
+- [ ] **[Authorization will be implemented]**
+- [ ] **[API end points will be added.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +147,7 @@ If you like this project please consider starring it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for giving me this opportunity to work on this project.
+I would like to thank Microverse for giving me this opportunity to work on this project. I would also like to thank my coding partner [Yosef Geda](https://github.com/Yosefgeda) for working on this project with me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
